@@ -1,0 +1,40 @@
+.body{
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+}
+.container{   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    
+    height: 10vh;
+    background-color: blue;
+}
+.torso{
+    height: 80vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    background-color: green;
+    width: 90vw;
+}
+.sidebar{
+    background-color: yellow;
+    width: 10vw;
+}
+.sidebar ul li{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgb(214, 22, 22);
+    height: 10vh;
+}

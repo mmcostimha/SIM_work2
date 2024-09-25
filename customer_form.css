@@ -1,0 +1,9 @@
+
+
+.container-fluid{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    height: 50vh; /* Para centralizar verticalmente na tela */
+}

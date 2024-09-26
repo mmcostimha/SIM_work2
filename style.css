@@ -1,43 +1,220 @@
-*{
-    padding: 0;
+* {
+
     margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
 }
 
-.container{   
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh; 
-    border: 1px solid black;
+.top_menu {
+
+    background-color: lightgreen;
+
+    display: block;
+
+    position: sticky;
+
+    top: 0;
+
+    height: 5vh;
+
+    z-index: 100;
+    /* optional, to make sure the menu appears on top of the other content.*/
+
 }
-.header{
-    height: 10vh;
+
+
+
+
+
+.container {
+
     background-color: blue;
-}
-.torso{
-    height: 80vh;
-    background-color: green;
-    display: flex;
-    flex-direction: row;
-}
-.content{
-    background-color: green;
-    width: 85vw;
-}
-.sidebar{
-    background-color: yellow;
-    align-items: start;
-    width: 15vw;
-}
-.sidebar ul li{
-    list-style: none;
-    margin-top: 13px;
-}
-.sidebar ul li i{
-    margin-right: 5px;
+
+    width: 100vw;
+
+    height: 95vh;
+
 }
 
-.footer{
-    background-color: rgb(214, 22, 22);
-    height: 10vh;
+.side_menu {
+
+    background-color: aqua;
+
+    width: 10vw;
+
+    float: left;
+
+    height: 100vh;
+
+    min-width: 200px;
+
+}
+.content {
+
+    background-color: lightgray;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    text-align: center;
+
+}
+
+#content_frame {
+
+    margin-top: 50px;
+
+    width: 70vw;
+
+    height: 80vh;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    border: none;
+    /* Remove the iframe border */
+
+}
+
+
+.side_menu>ul {
+
+    margin-top: 10px;
+
+    margin-left: 20px;
+
+}
+
+
+
+/*
+
+.side_menu > ul > li  {
+
+    list-style: none;
+
+    margin-top: 12px;
+
+}
+
+*/
+
+/* OR this way */
+
+.side_menu li {
+
+    list-style: none;
+
+    margin-top: 12px;
+
+}
+
+
+
+
+
+.side_menu i {
+
+    float: right;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+    margin-right: 10px;
+
+}
+
+
+
+.side_menu span {
+
+
+
+    margin-right: 20px;
+
+
+
+}
+
+
+
+.side_menu i:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+.top_menu i {
+
+    margin-top: 10px;
+
+    margin-left: 10px;
+
+}
+
+
+
+.top_menu i:hover {
+
+    cursor: pointer;
+
+}
+
+.container-fluid{
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+/*
+
+.side_menu > ul > li > a > i  {
+
+    margin-right: 10px;
+
+}
+
+
+
+*/
+
+
+
+/* Media query for smartphone-sized screens */
+
+@media (max-width: 768px) {
+
+    .side_menu {
+
+        display: none;
+        /* Hide the side menu */
+
+    }
+
+
+
+    .content {
+
+        width: 100%;
+        /* Make the content take up the full width */
+
+    }
+
 }

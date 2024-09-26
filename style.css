@@ -1,18 +1,16 @@
-.body{
+*{
     padding: 0;
     margin: 0;
-    background-color: orange;
 }
+
 .container{   
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    height: 100vh; 
+    border: 1px solid black;
 }
 .header{
-    
     height: 10vh;
     background-color: blue;
 }
@@ -24,14 +22,19 @@
 }
 .content{
     background-color: green;
-    width: 90vw;
+    width: 85vw;
 }
 .sidebar{
     background-color: yellow;
-    width: 10vw;
+    align-items: start;
+    width: 15vw;
 }
 .sidebar ul li{
     list-style: none;
+    margin-top: 13px;
+}
+.sidebar ul li i{
+    margin-right: 5px;
 }
 
 .footer{
